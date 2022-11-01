@@ -1,0 +1,47 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("Prison Life")
+
+local Tab = Window:NewTab("Teleports")
+
+local Section = Tab:NewSection("Teleports")
+
+Section:NewButton("TP to Police Department ", " ", function()
+    game:GetService("Workspace").YourNickname.HumanoidRootPart.CFrame = CFrame.new(832.390198, 99.9899826, 2309.35547, -0.999642849, 3.19788356e-08, 0.0267250109, 3.19500622e-08, 1, -1.50358626e-09, -0.0267250109, -6.49183485e-10, -0.999642849)
+end)
+
+Section:NewButton("TP to criminal base", " ", function()
+    game:GetService("Workspace").YourNickname.HumanoidRootPart.CFrame = CFrame.new(-914.731934, 95.1272888, 2150.82153, -0.0353739597, -3.11707176e-08, -0.999374151, 1.87310754e-08, 1, -3.18532436e-08, 0.999374151, -1.98461283e-08, -0.0353739597)
+end)
+
+local Tab = Window:NewTab("SpeedHack")
+
+local Section = Tab:NewSection("Speed")
+
+Section:NewButton("Speed 100", " ", function()
+    while wait() do
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end
+end)
+
+Section:NewButton("Speed 200", " ", function()
+    while wait() do
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+    end
+end)
+
+local Tab = Window:NewTab("JumpHack")
+
+local Section = Tab:NewSection("Jump")
+
+Section:NewButton("Jump 100", " ", function()
+   while wait() do
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+end
+end)
+
+Section:NewButton("Jump 200", " ", function()
+    while wait() do
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+    end
+end)
